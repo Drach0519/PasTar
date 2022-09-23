@@ -1,0 +1,335 @@
+@font-face{
+	font-family:Drina ;
+	src: url("../font/drina.ttf");
+
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma;
+}
+h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #000;
+	font-weight: normal;
+	list-style: none;
+	text-decoration: none;
+
+	
+}
+.header{
+	width: 	100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 60px;
+
+}
+.header-nav{
+
+
+
+}
+.header-nav a{
+	text-transform: uppercase;
+	color: #333;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 20px 20px;
+	font-family: 'Lato', sans-serif;
+	cursor: pointer;
+}
+.header-nav a:hover{
+	color: #53c6f2;
+}
+.header-lang{
+	display: flex;
+	align-items: center;
+}
+.header-lang .ukr{
+	margin: 25px 25px;
+	color: #53c6f2;
+	background-color: #ededed;
+	padding: 5px;
+}
+.header-lang .rus{
+	margin: 25px 25px;
+
+}
+.header-lang .tray span{
+	font-size: 20px;
+	cursor: pointer;
+	margin: 25px;
+	color: #53c6f2;
+}
+.header .logo{
+	top: -5%;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 45%;
+	font-family: Drina;
+	font-size: 56px;
+	color: #6fd325;
+	font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.header .logo:hover{
+	margin-top: 10px;
+	transition: 0.8s;
+}
+.header .logo span{
+	font-size: 56px;
+	color: #53c6f2;
+}
+.content-global{
+}
+.content-global .content-header{
+	text-align: center;
+	color: #666;
+	font-size: 25px;
+	line-height: 1.2;
+	font-family: 'Comfortaa', cursive;
+	font-weight: 600;
+	margin-bottom: 30px;
+	-webkit-user-select: none; 
+}
+
+.content{
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.content-menu{
+	width: 27%;
+	margin-left: 15px;
+
+}
+.content-menu:hover{
+	border: 1.5px solid #0be881;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.content-menu .menu-1{
+
+}
+.content-menu .menu-1 .avatar{
+	position: relative;
+}
+.content-menu .menu-1 .avatar img{
+	width: 100%;
+	margin-bottom: -20px;
+	
+
+}
+.content-menu .product-type{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+}
+.content-menu .product-type img{
+	border-bottom-right-radius: 20px;
+	width: 48px;
+	height: 66px;
+}
+.btn-price {
+	border: 1px solid #eee;
+	border-top: none;
+}
+.btn-price .name-prod{
+	cursor: pointer;
+	line-height: 1.2;
+	color: #53c6f2;
+	text-align: center;
+	font-family: 'Drina';
+	font-size: 25px;
+	margin: 20px 0px;
+	font-weight: 550;
+
+}
+.content-menu .menu-botom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
+}
+.content-menu .menu-botom .btn{
+	color: #666;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 20px;
+	border: 1px solid #666;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.content-menu .menu-botom .price{
+	color: #666;
+	cursor: pointer;
+	margin-left: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 25px;
+}
+.content-menu .menu-botom .help{
+	padding: 10px;	
+}
+.content-menu .menu-botom .help span{
+	font-size: 15px;
+}
+.footer{
+	margin-top: 40px;
+	background-color: #e8e8e8;
+	width: 100%;
+}
+.footer .info-footer{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.footer .info-footer .contacts{
+	width: 25%;
+
+}
+.footer .info-footer .contacts h4{
+	color: #666662;
+	font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.footer .info-footer .contacts h4:hover{
+	color: #53c6f2
+}
+.footer .info-footer .contacts .stock{
+	color: #666662;
+	font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+.footer .info-footer .contacts .stock:hover{
+	color: #53c6f2
+}
+.footer .info-footer .contacts ul{
+	margin: 0px 20px 20px 30px;
+}
+.footer .info-footer .contacts ul li span{
+
+}
+.footer .info-footer .contacts ul li a{
+	color: #666;
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.footer .info-footer .contacts ul li a:hover{
+	color: #53c6f2;
+}
+.footer .info-footer .types-pasta{
+	width: 25%;
+}
+.footer .info-footer .types-pasta h4{
+	color: #53c6f2;
+	font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.footer .info-footer .types-pasta h4:hover{
+	color: #53c6f2;
+}
+.footer .info-footer .types-pasta ul li a{
+	color: #666;
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 10px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.footer .info-footer .types-pasta ul li a:hover{
+	color: #53c6f2;
+}
+.footer .info-footer .formula{
+	width: 25%;
+}
+.footer .info-footer .formula h4{
+	color: #666662;
+	font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+.footer .info-footer .formula h4:hover{
+	color: #53c6f2;
+}
+.footer .info-footer .formula ul li a{
+	width: 25%;
+	color: #666;
+	font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 10px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.footer .info-footer .formula ul li a:hover{
+	color: #53c6f2;
+}
+.footer .share-panel{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+.footer .share-panel .share-panel-icon{
+}
+.footer .share-panel .share-panel-icon a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: #ffffff;
+	text-align: center;
+	margin: 10px;
+}
+.footer .share-panel .share-panel-icon a:hover{
+	border: 1.5px solid #53c6f2;
+}
+.footer .share-panel .share-panel-icon a span{
+	font-size: 18px;
+	margin: 10px;
+}
+.footer-sub{
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+.footer-sub a{
+	margin: 0px 89.5px 0px 89.5px;
+	color: #117a8b
+}
+.footer-sub .text-info{
+	font-size: 80%;
+    font-weight: 400;
+    color: #666;
+}
