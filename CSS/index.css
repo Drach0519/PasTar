@@ -51,20 +51,34 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	align-items: center;
 }
 .header-lang .ukr{
-	margin: 25px 25px;
+	
 	color: #53c6f2;
 	background-color: #ededed;
-	padding: 5px;
+	padding: 4px;
+	border-radius: 2px;
+	font-size: 18px;
 }
 .header-lang .rus{
-	margin: 25px 25px;
-
+	padding: 4px;
+	border-radius: 2px;
+	font-size: 18px;
+	transition: all 0.3s;
+}
+.header-lang .rus:hover{
+	color:#53c6f2 ;
+}
+.header-lang .rus:hover{
+	background-color: #ededed;
 }
 .header-lang .tray span{
 	font-size: 20px;
 	cursor: pointer;
 	margin: 25px;
-	color: #53c6f2;
+	color: #666;
+	transition: all 0.3s;
+}
+.header-lang .tray span:hover{
+	color:#53c6f2;
 }
 .header .logo{
 	top: -5%;
@@ -189,15 +203,18 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	margin-top: 40px;
 	background-color: #e8e8e8;
 	width: 100%;
+	padding: 15px; 
+	justify-content: center;
 }
 .footer .info-footer{
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	justify-content: space-between;
 }
 .footer .info-footer .contacts{
-	width: 25%;
-
+	box-sizing: border-box;
+	margin-left: auto;
+	padding: 15px;
 }
 .footer .info-footer .contacts h4{
 	color: #666662;
@@ -242,7 +259,8 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	color: #53c6f2;
 }
 .footer .info-footer .types-pasta{
-	width: 25%;
+	box-sizing: border-box;
+	padding: 15px;
 }
 .footer .info-footer .types-pasta h4{
 	color: #53c6f2;
@@ -269,7 +287,9 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	color: #53c6f2;
 }
 .footer .info-footer .formula{
-	width: 25%;
+	box-sizing: border-box;
+	margin-right: auto;
+	padding: 15px;
 }
 .footer .info-footer .formula h4{
 	color: #666662;
@@ -323,13 +343,25 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	width: 100%;
 	display: flex;
     justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
 }
-.footer-sub a{
-	margin: 0px 89.5px 0px 89.5px;
-	color: #117a8b
+.footer-sub .agreement{
+	box-sizing: border-box;
+	color: #117a8b;
+	margin-right: auto;
+	margin-left: 20%;
 }
 .footer-sub .text-info{
+	box-sizing: border-box;
+	margin-left: auto;
 	font-size: 80%;
     font-weight: 400;
     color: #666;
+	margin-right: 20%;
+}
+.footer .footer-sub .agreement:hover{
+	border-bottom: solid 1px #117a8b;
+	display: inline;
+
 }
