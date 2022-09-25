@@ -1,0 +1,48 @@
+@media (max-width:900px){
+    .header{
+        justify-content: right;
+        width: 100%;
+    }
+    .header .logo{
+        text-align: left;
+        right: 60%;
+    }
+    .header-nav{
+        display: none;
+    }   
+
+    .content{
+        display: block;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    .content-menu{
+        width: 100%; 
+    }
+    .footer{
+        padding: 5px;
+    }
+    .footer .share-panel{
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+    .footer .share-panel .share-panel-icon a{
+        margin: 5px;
+    }
+    .footer .info-footer{
+        display: block;
+        padding-left: 15px;
+        width: 100%;
+        z-index: 1000;
+    }
+    .footer-sub{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .mobile{
+        display: block;
+    }
+}
