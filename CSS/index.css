@@ -109,7 +109,12 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	margin-bottom: 30px;
 	-webkit-user-select: none; 
 }
-
+html, body, h1, h2, h3, h4, h5, h6, span, a, div{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: Tahoma;
+}
 .content{
 	margin-top: 30px;
 	width: 100%;
@@ -119,11 +124,15 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 .content-menu{
 	width: 27%;
 	margin-left: 15px;
+	box-sizing: border-box;
+
 
 }
 .content-menu:hover{
-	border: 1.5px solid #0be881;
-	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	border: 1.5px solid #8fff3b;
+	-webkit-box-shadow: 0 0 22px 0 rgb(0 0 0 / 7%);
+	user-select: none;
+	height: 100%;
 }
 
 .content-menu .menu-1{
@@ -142,7 +151,7 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	
+	vertical-align: middle;
 }
 .content-menu .product-type img{
 	border-bottom-right-radius: 20px;
@@ -199,7 +208,7 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	margin-top: 40px;
 	background-color: #e8e8e8;
 	width: 100%;
-	padding: 0px; 
+	padding-bottom: 30px; 
 	justify-content: center;
 }
 .footer .info-footer{
@@ -327,28 +336,31 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	background-color: #ffffff;
 	text-align: center;
 	margin: 10px;
+	box-sizing: border-box;
+
 }
 .footer .share-panel .share-panel-icon a:hover{
-	border: 1.5px solid #53c6f2;
+	outline: 1.5px solid #53c6f2;
 }
 .footer .share-panel .share-panel-icon a span{
 	font-size: 18px;
 	margin: 10px;
+	
 }
 .footer-sub{
 	width: 100%;
 	display: flex;
     justify-content: space-between;
-	margin-left: auto;
-	margin-right: auto;
+	align-items: center;
 }
 .footer-sub .agreement{
 	display: inline-block;
 	box-sizing: border-box;
-	color: #117a8b;
 	margin-right: auto;
-	
-	
+	margin-left: 250px;
+}
+.footer-sub .agreement-text{
+	color: #117a8b;
 }
 .footer-sub .text-info{
 	display: inline-block;
@@ -357,8 +369,13 @@ h1, h2,h3,h4,h5,h6, div,span,ul,li,p,a{
 	font-size: 80%;
     font-weight: 400;
     color: #666;
+	margin-right: 250px;
 }
-.footer .footer-sub .agreement:hover{
+.footer .footer-sub .agreement .agreement-text a{
+	display: inline-block;
+	box-sizing: border-box;
+}
+.footer .footer-sub .agreement a:hover{
 	border-bottom: solid 1px #117a8b;
 	display: inline;
 
