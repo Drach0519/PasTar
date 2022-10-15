@@ -10,18 +10,7 @@ body {
 	font-family: Tahoma;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-div,
-span,
-ul,
-li,
-p,
-a {
+h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
@@ -92,8 +81,24 @@ a {
 	margin: 25px;
 	color: #666;
 	transition: all 0.3s;
+	position: relative;
 }
-
+.header-lang .current-value{
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	background-color: #6fd325;
+	border: 0.5px solid #6fd325;
+	color: #fff;
+	opacity: 0;
+}
+.btn-active:hover .current-value{
+	opacity: 1;
+}
 .header-lang .tray span:hover {
 	color: #53c6f2;
 }
@@ -133,23 +138,6 @@ a {
 	font-weight: 600;
 	margin-bottom: 30px;
 	-webkit-user-select: none;
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-a,
-div {
-	margin: 0;
-	padding: 0;
-	color: #000;
-	font-family: Tahoma;
 }
 
 .content {
@@ -234,6 +222,18 @@ div {
 	border-radius: 5px;
 	font-size: 20px;
 	font-weight: 700;
+}
+.content-menu .menu-botom .btn-active {
+	color: #eee;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 20px;
+	border: 1px solid #4eda6b;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: 700;
+	background: #4eda6b;
 }
 
 .content-menu .menu-botom .price {

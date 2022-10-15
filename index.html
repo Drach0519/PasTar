@@ -22,6 +22,7 @@
 			<a href="" class="rus">Рос</a>
 			<div class="tray">
 				<span class="fas fa-shopping-cart"></span>
+				<input type="text" value="0" id="current" class="current-value">
 			</div>
 			<div class="mobile">
 				<span class="fas fa-bars"></span>
@@ -48,7 +49,7 @@
 					<div class="btn-price">
 						<h4 class="name-prod" id="name-1"></h4>
 						<div class="menu-botom">
-							<a class="btn">Недоступно</a>
+							<a class="btn-active" data-id="product1">В кошик</a>
 							<h2 class="price" id="price.product1"></h2>
 							<div class="help"><span class="fab fa-question"></span></div>
 													
@@ -63,8 +64,9 @@
 					<div class="btn-price">
 						<h4 class="name-prod" id="name-2"></h4>
 						<div class="menu-botom">
-							<a class="btn">Недоступно</a>
-							<h2 class="price" id="price.product2"></h2>
+							<a class="btn-active" data-id="product2">В кошик</a>
+							<a class="btn-minus" data-id="product2">-</a>
+							<h2 class="price" id="price.product2" ></h2>
 							<span></span>
 						</div>
 					</div>
