@@ -1,10 +1,10 @@
-document.getElementById("name.1").innerHTML = "Макарон із гороху жовтого";
-document.getElementById("name.2").innerHTML = "Макарони із сочевиці зеленої";
-document.getElementById("name.3").innerHTML = "Макарони із квасолі";
-document.getElementById("name.4").innerHTML = "Макарони із сочевиці червоної";
-document.getElementById("name.5").innerHTML = "Макарони з гороху жовтого";
-document.getElementById("name.6").innerHTML = "Макарони із сочевиці зеленої";
-document.getElementById("name.7").innerHTML = "Макарони з гороху зеленого";
+document.getElementById("name-1").innerHTML = "Макарон із гороху жовтого";
+document.getElementById("name-2").innerHTML = "Макарони із сочевиці зеленої";
+document.getElementById("name-3").innerHTML = "Макарони із квасолі";
+document.getElementById("name-4").innerHTML = "Макарони із сочевиці червоної";
+document.getElementById("name-5").innerHTML = "Макарони з гороху жовтого";
+document.getElementById("name-6").innerHTML = "Макарони із сочевиці зеленої";
+document.getElementById("name-7").innerHTML = "Макарони з гороху зеленого";
 document.getElementById("price.product1").innerHTML = "85 грн";
 document.getElementById("price.product2").innerHTML = "85 грн";
 document.getElementById("price.product3").innerHTML = "85 грн";
