@@ -1,3 +1,12 @@
+const product = {
+  nameProduct: [
+  "Макарон з гороху жовтого",
+  "Макарони з гороху зеленого",
+  "Макарони із квасолі",
+  "Макарони із сочевиці зеленої",
+  "Макарони із сочевиці червоної"
+  ],
+}
 document.getElementById("name-1").innerHTML = "Макарон із гороху жовтого";
 document.getElementById("name-2").innerHTML = "Макарони із сочевиці зеленої";
 document.getElementById("name-3").innerHTML = "Макарони із квасолі";
@@ -26,12 +35,11 @@ let cart = {
   product2:[0],
 };
 
-console.log(cart.product1[0])
 document.onclick = event =>{
   if(event.target.classList.contains('btn-active')){
     plusFunction(event.target.dataset.id);
     const inp = document.querySelector('.current-value');
-    const carentValue = +inp.value;
+    let carentValue = +inp.value;
     let newValue = carentValue + 1;
     inp.value = newValue;
     //виводми лічильник
@@ -39,25 +47,29 @@ document.onclick = event =>{
     document.querySelector('.header-lang .tray span').style.cssText = 'color: #53c6f2';
     document.querySelector('.current-value').style.cssText = 'opacity: 1';
   }
-    
-  }
+    localStorage.setItem('text',newValue.toString())
+    console.log(localStorage.getItem('text'))
+    return newValue=inp.value;
+}
   if(event.target.classList.contains('btn-minus')){
     minusFunction(event.target.dataset.id);
     const inp = document.querySelector('.current-value');
-    const carentValue = +inp.value;
+    let carentValue = +inp.value;
     let newValue = carentValue - 1;
     inp.value = newValue;
-    if (inp.value < 0){
+    if (inp.value <= 0){
       inp.value =0//перевірка щоб не заходило в мінус 
       //ховаємо лічильник
       document.querySelector('.header-lang .tray span').style.cssText = 'color: #666';
       document.querySelector('.current-value').style.cssText = 'opacity: 0';
     }
     //збереження даних
-    localStorage.setItem('text',carentValue)
-    console.log(localStorage.getItem('text'))
+      localStorage.setItem('text',newValue.toString())
+      console.log(localStorage.getItem('text'))
+      return newValue=inp.value;
   }
 }
+
 
 // збільшення товару 
 const plusFunction = id =>{
