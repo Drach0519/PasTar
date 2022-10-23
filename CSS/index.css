@@ -21,6 +21,9 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 }
 
 .header {
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 65px;
 	display: flex;
@@ -28,7 +31,11 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 	align-items: center;
 	border-bottom: 1px solid #eee;
 	margin-bottom: 60px;
-
+	z-index: 10000;
+	background-color: #fff;
+	position:fixed;
+	top:0;
+	left: 0;
 }
 
 .header-nav {}
@@ -127,7 +134,9 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 	color: #53c6f2;
 }
 
-.content-global {}
+.content-global {
+	margin-top: 100px;
+}
 
 .content-global .content-header {
 	text-align: center;
@@ -148,11 +157,9 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 }
 
 .content-menu {
-	width: 27%;
-	margin-left: 15px;
+	width: 25%;
+	margin-left: 30px;
 	box-sizing: border-box;
-
-
 }
 
 .content-menu:hover {
@@ -171,8 +178,6 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 .content-menu .menu-1 .avatar img {
 	width: 100%;
 	margin-bottom: -20px;
-
-
 }
 
 .content-menu .product-type {
@@ -304,9 +309,6 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 .footer .info-footer .contacts ul {
 	margin: 0px 20px 20px 30px;
 }
-
-.footer .info-footer .contacts ul li span {}
-
 .footer .info-footer .contacts ul li a {
 	color: #666;
 	font-size: 1rem;
@@ -393,9 +395,6 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 	text-align: center;
 	margin-top: 20px;
 }
-
-.footer .share-panel .share-panel-icon {}
-
 .footer .share-panel .share-panel-icon a {
 	display: inline-block;
 	width: 40px;
@@ -405,7 +404,6 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 	text-align: center;
 	margin: 10px;
 	box-sizing: border-box;
-
 }
 
 .footer .share-panel .share-panel-icon a:hover {
@@ -415,7 +413,6 @@ h1,h2,h3,h4,h5,h6,div,span,ul,li,p,a {
 .footer .share-panel .share-panel-icon a span {
 	font-size: 18px;
 	margin: 10px;
-
 }
 
 .footer-sub {

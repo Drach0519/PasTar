@@ -31,10 +31,9 @@ document.getElementById("avatar-6").innerHTML ='<img src="img/green-lentils-mush
 
 
 let cart = {
-  product1:[0],
-  product2:[0],
+  product1:[],
+  product2:[],
 };
-
 document.onclick = event =>{
   if(event.target.classList.contains('btn-active')){
     plusFunction(event.target.dataset.id);
@@ -64,8 +63,7 @@ document.onclick = event =>{
       document.querySelector('.current-value').style.cssText = 'opacity: 0';
     }
     //збереження даних
-      localStorage.setItem('text',newValue.toString())
-      console.log(localStorage.getItem('text'))
+      localStorage.setItem('text',inp.value.toString())
       return newValue=inp.value;
   }
 }
@@ -74,7 +72,6 @@ document.onclick = event =>{
 // збільшення товару 
 const plusFunction = id =>{
   cart[id]++;
-  renderCart();
 
 }
 //уменшение товара
@@ -84,14 +81,23 @@ const minusFunction = id =>{
     return true; 
   }
   cart[id]--;
-  renderCart();
 };
 //удаление товара
 const deleteFunction = id =>{
   delete cart[id];
-  renderCart();
 }
-const renderCart = () => {
-  console.log(cart);
+const showNumber = () => {
+ let number = localStorage.getItem('text'); 
+ let inp = document.querySelector('.current-value');
+ inp.value=number; 
+ return number
+ 
+}
+window.onload =function(){
+  let myNumber= showNumber() 
+  if( myNumber >0){
+    document.querySelector('.header-lang .tray span').style.cssText = 'color: #53c6f2';
+    document.querySelector('.current-value').style.cssText = 'opacity: 1';  
 
+}
 }
