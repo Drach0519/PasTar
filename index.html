@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato&family=Londrina+Solid&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/f937a12f25.js" crossorigin="anonymous"></script>	
+	<link rel="stylesheet" href="css/media.css">
+	<script src="https://kit.fontawesome.com/f937a12f25.js" crossorigin="anonymous"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -18,9 +19,30 @@
 		</div>
 		<div class="header-lang">
 			<a href="" class="ukr">Укр</a>
-			<a href="" class="rus">Рус</a>
+			<a href="" class="rus">Рос</a>
 			<div class="tray">
-				<span class="fas fa-shopping-cart"></span>
+				<span class="fas fa-shopping-cart" id="basket"></span>
+					<div class="tray-grocery-basket">
+						<h1 class="tray-basket-tittel">Кошик</h1>
+						<div class="tray-basket-orderlist">
+							<ul>
+								<li id="productBasket1"></li>
+								<li id="productBasket2"></li>
+							</ul>
+							<a href="" class="basket-checkout">Оформити покупку</a>
+						</div>
+					</div>
+				
+				<input type="text" value="0" id="current" class="current-value">
+			</div>
+			<div class="mobile">
+				<span class="fas fa-bars"></span>
+				<ul class="mobile-menu">
+					<li><a href="">Наша продукція</a></li>
+					<li><a href="">Контакт</a></li>
+					<li><a href="">Рецепти</a></li>
+					<li><a href="">Акції</a></li>
+				</ul>
 			</div>
 		</div>
 		<a class="logo">
@@ -33,32 +55,28 @@
 		<div class="content">
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/peas.jpg">
-						<div class="product-type"><img src="img/spiral.png"></div>		
+					<div class="avatar" id="avatar-1">	
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарон із гороху жовтого</h4>
+						<h4 class="name-prod" id="name-1"></h4>
 						<div class="menu-botom">
-							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
-							<div class="help"><span class="fab fa-question"></span></div>
-													
+							<a class="btn-active" data-id="product1" id="btn-activ1">В кошик</a>
+							<h2 class="price" id="price.product1"></h2>
+							<div class="help"><span class="fab fa-question"></span></div>													
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/green-lentils-spiral.jpg">
-						<div class="product-type"><img src="img/spiral.png">	</div>
+					<div class="avatar" id="avatar-2">			
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарони із сочевиці зеленої</h4>
+						<h4 class="name-prod" id="name-2"></h4>
 						<div class="menu-botom">
-							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
+							<a class="btn-active" data-id="product2" id="btn-activ2">В кошик</a>
+							<a class="btn-minus" data-id="product2">delet</a>
+							<h2 class="price" id="price.product2" ></h2>
 							<span></span>
 						</div>
 					</div>
@@ -66,15 +84,13 @@
 			</div>
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/bean.jpg">
-						<div class="product-type"><img src="img/spiral.png">	</div>		
+					<div class="avatar" id="avatar-3">		
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарони із квасолі</h4>
+						<h4 class="name-prod" id="name-3"></h4>
 						<div class="menu-botom">
 							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
+							<h2 class="price" id="price.product3"></h2>
 							<span></span>
 						</div>
 					</div>
@@ -84,15 +100,13 @@
 		<div class="content">
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/red-lentils-spiral.jpg">
-						<div class="product-type"><img src="img/spiral.png">	</div>		
+					<div class="avatar" id="avatar-4">	
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарони із сочевиці червоної</h4>
+						<h4 class="name-prod" id="name-4"></h4>
 						<div class="menu-botom">
 							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
+							<h2 class="price" id="price.product4"></h2>
 							<span></span>
 						</div>
 					</div>
@@ -100,15 +114,13 @@
 			</div>
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/peas-mushla-yellow.jpg">
-						<div class="product-type"><img src="img/mushla.png">	</div>		
+					<div class="avatar" id="avatar-5">	
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарони з гороху жовтого</h4>
+						<h4 class="name-prod" id="name-5"></h4>
 						<div class="menu-botom">
 							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
+							<h2 class="price" id="price.product5"></h2>
 							<span></span>
 						</div>
 					</div>
@@ -116,15 +128,13 @@
 			</div>
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/green-lentils-mushla.jpg">
-						<div class="product-type"><img src="img/mushla.png"></div>
+					<div class="avatar" id="avatar-6">
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарони із сочевиці зеленої</h4>
+						<h4 class="name-prod" id="name-6"></h4>
 						<div class="menu-botom">
 							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
+							<h2 class="price" id="price.product6"></h2>
 							<span></span>
 						</div>
 					</div>
@@ -134,15 +144,13 @@
 		<div class="content">
 			<div class="content-menu">
 				<div class="menu-1"> 
-					<div class="avatar">
-						<img src="img/peas-green-spiral.jpg">
-						<div class="product-type"><img src="img/spiral.png">	</div>		
+					<div class="avatar" id="avatar-7">	
 					</div>
 					<div class="btn-price">
-						<h4 class="name-prod">Макарони з гороху зеленого</h4>
+						<h4 class="name-prod" id="name-7"></h4>
 						<div class="menu-botom">
 							<a class="btn">Недоступно</a>
-							<h2 class="price">85 грн.</h2>
+							<h2 class="price" id="price.product7"></h2>
 							<span></span>
 						</div>
 					</div>
@@ -227,9 +235,12 @@
 				</div>
 		</div>
 		<div class="footer-sub">
-         		<a href="" class="text-info">2022 PaStar© Всі права захищені.</a>
-         		<a href="">Угода надання та отримання послуг</a>
+         		<small class="text-info">2022 PaStar© Всі права захищені.</small>
+         		<small class="agreement">
+					<a href="" class="agreement-text">Угода надання та отримання послуг</a>
+				</small>
         </div>
-	</div>		
+	</div>
+	<script defer src="js/index.js"></script>		
 </body>
 </html>
