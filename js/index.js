@@ -6,8 +6,11 @@ const product = {
   "Макарони із сочевиці зеленої",
   "Макарони із сочевиці червоної"
   ],
+  priceProduct:[
+    85 + "грн"
+  ]
 }
-document.getElementById("name-1").innerHTML = "Макарон із гороху жовтого";
+document.getElementById("name-1").innerHTML = "Макарони з гороху жовтого";
 document.getElementById("name-2").innerHTML = "Макарони із сочевиці зеленої";
 document.getElementById("name-3").innerHTML = "Макарони із квасолі";
 document.getElementById("name-4").innerHTML = "Макарони із сочевиці червоної";
@@ -47,8 +50,8 @@ document.onclick = event =>{
     document.querySelector('.current-value').style.cssText = 'opacity: 1';
   }
     localStorage.setItem('text',newValue.toString())
-    console.log(localStorage.getItem('text'))
     return newValue=inp.value;
+    let productBasket2 = document.getElementById("productBasket2").innerHTML=product.nameProduct[3];
 }
   if(event.target.classList.contains('btn-minus')){
     minusFunction(event.target.dataset.id);
@@ -61,11 +64,15 @@ document.onclick = event =>{
       //ховаємо лічильник
       document.querySelector('.header-lang .tray span').style.cssText = 'color: #666';
       document.querySelector('.current-value').style.cssText = 'opacity: 0';
+      productBasket2.innerHTML='';
+      productBasket1.innerHTML='';
+      
     }
     //збереження даних
       localStorage.setItem('text',inp.value.toString())
       return newValue=inp.value;
   }
+    
 }
 
 
@@ -101,3 +108,22 @@ window.onload =function(){
 
 }
 }
+ let btn1=document.getElementById("btn-activ1");
+  btn1.onclick = function(){
+    let productBasket1 = document.getElementById("productBasket1").innerHTML=product.nameProduct[0];
+ };
+
+ let btn2=document.getElementById("btn-activ2");
+  btn2.onclick = function(){
+  let productBasket2 = document.getElementById("productBasket2").innerHTML=product.nameProduct[3];
+ };
+
+/* let delete1 = document.querySelector('.btn-minus');
+delete1.onclick=function(){
+  productBasket2.innerHTML='';
+  productBasket1.innerHTML='';
+} */
+function move() {
+  document.querySelector('.tray-grocery-basket').classList.toggle('active');
+}
+document.getElementById('basket').addEventListener('click', move);

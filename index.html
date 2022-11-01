@@ -21,7 +21,18 @@
 			<a href="" class="ukr">Укр</a>
 			<a href="" class="rus">Рос</a>
 			<div class="tray">
-				<span class="fas fa-shopping-cart"></span>
+				<span class="fas fa-shopping-cart" id="basket"></span>
+					<div class="tray-grocery-basket">
+						<h1 class="tray-basket-tittel">Кошик</h1>
+						<div class="tray-basket-orderlist">
+							<ul>
+								<li id="productBasket1"></li>
+								<li id="productBasket2"></li>
+							</ul>
+							<a href="" class="basket-checkout">Оформити покупку</a>
+						</div>
+					</div>
+				
 				<input type="text" value="0" id="current" class="current-value">
 			</div>
 			<div class="mobile">
@@ -49,7 +60,7 @@
 					<div class="btn-price">
 						<h4 class="name-prod" id="name-1"></h4>
 						<div class="menu-botom">
-							<a class="btn-active" data-id="product1">В кошик</a>
+							<a class="btn-active" data-id="product1" id="btn-activ1">В кошик</a>
 							<h2 class="price" id="price.product1"></h2>
 							<div class="help"><span class="fab fa-question"></span></div>													
 						</div>
@@ -63,8 +74,8 @@
 					<div class="btn-price">
 						<h4 class="name-prod" id="name-2"></h4>
 						<div class="menu-botom">
-							<a class="btn-active" data-id="product2">В кошик</a>
-							<a class="btn-minus" data-id="product2">-</a>
+							<a class="btn-active" data-id="product2" id="btn-activ2">В кошик</a>
+							<a class="btn-minus" data-id="product2">delet</a>
 							<h2 class="price" id="price.product2" ></h2>
 							<span></span>
 						</div>
